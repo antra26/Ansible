@@ -1,0 +1,10 @@
+---
+- name: Configuring a User
+  hosts: pong
+  tasks:
+    - name: Checking the user in the mentioned host
+      user:
+        name: rahul
+        uid: 1000
+        state: present
+...

@@ -1,0 +1,9 @@
+---
+- name: Play to setup a webserver
+  hosts: pong
+  tasks: 
+    - name: to ensure apache is latest package
+      apt: 
+        name: apache2
+        state: latest
+...

@@ -1,0 +1,21 @@
+---
+- name: Apache service 
+  hosts: pong
+  tasks:
+    - name: apache is installed
+      apt:
+        name: apache2
+        state: present
+
+    - name: Copying files
+      copy:
+        src: files/index.html
+        dest: /var/www/html/index.html
+
+     
+    - name: Service is running
+      service:
+        name: apache2	        
+        enabled: True
+        state: started
+...

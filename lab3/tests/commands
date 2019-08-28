@@ -1,0 +1,4 @@
+ ansible pong -m user -a "name=rahul uid=1000 state=present"
+ansible-playbook --syntax-check play1.yml (for syntax check)
+ansible-playbook -C play1.yml   (to do dry run)
+ansible-playbook play1.yml   (running playbook)

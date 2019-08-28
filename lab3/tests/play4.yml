@@ -1,0 +1,13 @@
+---
+- name: Playbook to search/add a line in a file
+  hosts: pong
+  become: true
+  remote_user: rahul
+  tasks:
+    - name: task to search/add a line in /etc/hosts
+      lineinfile:
+        path: /etc/hosts
+        line: 'test' 
+        state: present
+...        
+   
