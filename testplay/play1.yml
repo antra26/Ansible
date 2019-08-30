@@ -1,0 +1,15 @@
+# just checking the user
+---
+- name: Configure a user
+  hosts: pong
+  tasks:
+    - name: Check if the user is present
+      user:
+        name: rahul
+        uid: 1000
+        state: present
+...
+
+
+
+ 
