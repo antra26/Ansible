@@ -1,0 +1,11 @@
+---
+- name: Play to set up a web server
+  hosts: pong
+  tasks:
+    - name: Play to set up a web server
+      apt:
+        name: apache2
+        state: latest
+
+...
+
